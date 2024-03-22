@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 20vw;
+}
+
+td {
+    width: 50%;
+    border: 1px solid black;
+}
+
+.first-cell {
+    background-color: green;
+}
+
+.second-cell {
+    background-color: salmon;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    td {
+        width: 100%;
+        /* Make each cell occupy 50% of the table size */
+        display: block;
+        /* Change the display to block for responsiveness */
+        border: 1px solid black;
+        /* Add border to cells */
+        padding: 10px;
+        /* Add padding for better spacing on smaller screens */
+    }
+}
