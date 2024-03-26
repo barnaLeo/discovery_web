@@ -1,130 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hamburguesa-Drop-down menú</title>
-    <style>
-html, body {
-    margin: 0;
-}
+    <link rel="stylesheet" href="style-21.css">
 
-/* Main Menu Container */
-.main-menu-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f2f2f2;
-    color: black;
-    padding: 10px;
-    flex-direction: column;
-}
-
-/* Menu Toggle */
-input#menu-toggle {
-    display: none;
-}
-
-/* Menu Burger */
-.menu-burger {
-    display: flex;
-    align-items: center;
-}
-
-.menu-burger-icon {
-    width: 33px;
-    height: 5px;
-    background-color: #333;
-    border-radius: 3px;
-    position: relative;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-.menu-burger-icon::before,
-.menu-burger-icon::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #333;
-    border-radius: 3px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.menu-burger-icon::before {
-    top: -10px;
-}
-
-.menu-burger-icon::after {
-    bottom: -10px;
-}
-
-/* Navigation Menu */
-.nav-menu {
-    display: none;
-}
-
-.menu-toggle:checked ~ .nav-menu {
-    display: flex;
-    flex-direction: column;
-}
-
-.nav-list {
-    list-style: none;
-    padding: 0;
-}
-
-.nav-item {
-    margin: 10px 0;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-/* Responsive and State Changes */
-.menu-toggle:checked ~ .main-menu-container {
-    display: none;
-}
-
-.menu-toggle:checked ~ .main-menu-container .menu-burger {
-    display: flex;
-}
-
-.menu-toggle:checked + .menu-burger .menu-burger-icon::before {
-    background-color: red;
-    transform: rotate(45deg);
-    top: 50%;
-}
-
-.menu-toggle:checked + .menu-burger .menu-burger-icon::after {
-    top: 50%;
-    background-color: orange;
-    transform: rotate(-225deg);
-}
-
-    </style>
 </head>
+
 <body>
     <header>
         <nav class="main-menu-container">
-          <input type="checkbox" id="menu-toggle" class="menu-toggle">
-          <label for="menu-toggle" class="menu-burger">
-            <span class="menu-burger-icon"></span>
-            <span class="menu-burger-text">Menu</span>
-          </label>
-          <div class="nav-menu">
-            <ul class="nav-list">
-              <li class="nav-item"><a href="#" class="nav-link">Link 1</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Link 2</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Link 3</a></li>
-            </ul>
-          </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-burger">
+                <span class="menu-burger-icon"></span>
+                <span class="menu-burger-text">Menu</span>
+            </label>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link">Link 1</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Link 2</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Link 3</a></li>
+                </ul>
+            </div>
         </nav>
-      </header>      
+    </header>
 </body>
+
 </html>
