@@ -14,7 +14,7 @@
     opacity:.9;
    }
    
-   #parallaxContainer .parallax-one {
+   #parallaxContainer .parallaxSectionOne {
     padding-top: 200px; 
     padding-bottom: 200px; 
     overflow: hidden; 
@@ -37,7 +37,7 @@
     text-align:justify;
    }
    
-   #parallaxContainer .parallax-two {
+   #parallaxContainer .parallaxSectionTwo {
     padding-top: 200px; 
     padding-bottom: 200px; 
     overflow: hidden; 
